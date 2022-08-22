@@ -1,0 +1,10 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = bigcontrolcenter
+
+[Action]
+Description = Configurations xivastudio welcome
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/xivastudio-welcome

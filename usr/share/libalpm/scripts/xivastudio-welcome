@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#titulo da janela
+sed -i 's/Introdução ao BigLinux/Introdução ao XIVAStudio/'  /usr/share/bigbashview/bcc/apps/big-welcome/index.sh.htm
+
+#1º tela
+sed -i 's/BIGLINUX/XIVAStudio/'  /usr/share/bigbashview/bcc/apps/big-welcome/index.sh.htm
+
+#ultima tela
+sed -i '/utilizar/s/BigLinux/XIVAStudio/'  /usr/share/bigbashview/bcc/apps/big-welcome/index.sh.htm
+
+#.desktop
+sed -i 's/BigLinux/XIVAStudio/'  /usr/share/applications/bigcontrolcenter/big-welcome.desktop
+sed -i 's/biglinux/xivastudio/'  /usr/share/applications/bigcontrolcenter/big-welcome.desktop
