@@ -1,0 +1,15 @@
+pkgname=xivastudio-welcome
+pkgver=$(date +%y.%m.%d)
+pkgrel=$(date +%H%M)
+arch=('any')
+license=('GPL')
+depends=('calamares-biglinux')
+url="https://github.com/xivastudio/$pkgname"
+pkgdesc="Changes on big-welcome"
+source=("git+https://github.com/xivastudio/$pkgname.git")
+md5sums=(SKIP)
+install=post.install
+
+package() {
+    cp -r "${srcdir}/$pkgname/usr/" "${pkgdir}/"
+}
